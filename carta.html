@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta para Mamá</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: url('https://www.transparenttextures.com/patterns/paper-fibers.png') repeat;
+      background-color: #fff8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .card {
+      background: #fffdf9;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 30px 20px;
+      width: 90%;
+      max-width: 500px;
+      height: auto;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1em;
+      color: #333;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    .heart {
+      position: absolute;
+      top: -8px;
+      right: -5px;
+      font-size: 3em;
+      color: #ff4d6d;
+      animation: pulse 2s infinite;
+    
+    }
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .photo-gallery img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.95em;
+      }
+      .photo-gallery img {
+        width: 75px;
+        height: 75px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Para Sandra Batista
+    </h1>
+    <p>
+        Hola mami, ahora mismo estoy hablando español, pero en la anterior carta estaba hablando en inglés, esta es la misma carta pero en español, en caso de que no hayas podido entender mi carta en inglés.
+
+    </p>
+    <p>
+        Primero que nada, gracias. Gracias por siempre enseñarme acerca de la vida, gracias por enseñarme a cocinar (no cocino muy bien, pero tú entendiste), y gracias por ser muy paciente conmigo. Ojalá cada día nos volvamos más cercanos.
+        Adiós mami.
+    </p>
+    <div class="photo-gallery">
+      <img src="mami.jpg" alt="Foto mamá 1">
+      <img src="mami2.jpg" alt="Foto mamá 2">
+      <img src="mami3.jpg" alt="Foto mamá 3">
+    </div>
+  </div>
+</body>
+</html>
